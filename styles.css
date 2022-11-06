@@ -1,0 +1,110 @@
+@charset "utf-8";
+*{margin:0;padding:0;font-family:'微軟正黑體';box-sizing:border-box;}
+ul,ol{list-style-type:none;}
+.wrapper{max-width:1000px;margin:0 auto;}
+img{max-width:100%;height:auto;}
+/*fb粉絲和Twttier*/
+a:link{color:black;text-decoration:none;} /*a:link、a:visited、a:hover、a:active是虛擬(偽)選擇器*/
+a:visited{color:black;}
+a:hover{color:blue;}
+a:active{color:black;}
+
+.link{background-color:#EBEBF5;padding-bottom:20px;}
+.link li,nav li{float:left;margin-right:20px;}
+nav li:last-child{margin:0;}
+.link ul{float:right;}
+.link :after{content:"";display:block; clear:both;} /*ul:after是虛擬(偽)元素*/
+
+ /*放照片，text-indent:-99999px是將文字移開*/
+header h1{background:url('images/web_1.png'); width:191px; height:48px; text-indent:-99999px; float:left;margin-top:11px;}
+header h1{content:"";display:block;clear:both;}   /*防止選單跑掉*/
+header:after{content:"";display:block;clear:both;}
+/*nav 選單*/
+nav ul{float:right;}
+nav ul a{padding:15px;display:block;border-bottom:solid 3px transparent;}
+nav ul a:hover{border-bottom-color:red;}
+
+.event{background:url('images/web_7.png') no-repeat center center; height:346px;}
+.event h2{font-size:38px; color:white;padding:120px 0 0 10px;}
+
+/*article的圖文*/
+.classList{display:table;border-spacing:10px;}
+.classList section{display:table-cell;width:33%;box-shadow:0 0 5px #555;border-radius:5px;padding:15px 12px;text-align:center;position:relative;overflow:hidden;}
+.classList section h1{font-size:22px;margin:5px 0;}
+.classList section p,.classList section ul{text-align:left;}
+.classList section:before{content:"";display:block;background-color:rgba(0,0,0,.0);position:absolute;left:0;top:0;width:100%;height:800px;transition:all 0.5s;}
+.classList section:hover:before{background-color:rgba(0,0,0,0.7);cursor:pointer;}
+.classList section:after{content:"";display:block;position:absolute;left:45%;top:0;width:50px;height:50px;transition:all 0.5s;}
+.classList section:hover:after{top:50%;background:url('images/link-blue2.png') no-repeat; cursor:pointer;}
+
+/*article的表格*/
+article table{width:1000px;border-collapse:collapse;margin:30px 0;}
+article table capction {font-size:28px;font-weight:bold;padding:10px 0;}
+article tr{border-top: solid 1px #e4e4e4;border-bottom:solid 1px #e4e4e4;padding: 10px 0;}
+article tr:first-child{background-color:#eaeaea;}
+acticle tr td{padding:10px;}
+
+/*側邊攔和留下資料*/
+aside{background:linear-gradient(#00654c,#009871);}
+aside:after{content:"";display:block;clear:both;}
+aside h1{color:white;text-align:center;padding:10px 0;}
+iframe{margin:0 20px;float:left; width:500px; height:370px;}
+input{border:none;padding:7px 4px; border-radius:3px;}
+input,textarea{width:100%;margin-bottom:5px;}
+form{padding:0 15px;margin-left:530px;color:white;}
+input[type=button]{background-color:#00cc99; width:100px; color:white;} /*屬性選擇器*/
+
+/*圖示課程排版1*/
+/*#info{padding:20px 0 20px 0;}
+#info ul li{width:33%;text-align:center;margin:0px 0 10px 0;float:left;}
+#info:after{content:"";display:block;clear:both;}
+#info h1{text-align:center;font-size:24px;}*/
+
+/*圖示課程排版2*/
+#info ul{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;}
+.top{width:50px;height:50px;background-color:red;position:fixed;right:10px;bottom:20px;padding:10px 0 0 10px;}
+.top:before{content:"";display:inline-block;border-color:transparent transparent white transparent;border-style:solid;
+			border-width:0 15px 25px 15px;text-align:center; }
+
+
+/*頁尾*/
+
+footer{padding:20px 5px; background-color:#00cc99;}
+footer span{background:url('images/web_6.png');width:194px;height:36px;display:block;float:left;}
+footer ul{margin-left: 70%}
+footer em{color:#E70685; font-style:normal;}
+
+@media only screen  and (max-width:420px){
+
+	header h1,nav ul{float:none;}
+	nav li{width:50%;margin-right:0px;text-align:center;}
+
+	.event{background:url('images/web_8.png') no-repeat center center; height:346px;}
+	.event h2{font-size:38px; color:white;padding:95px 0 0 10px;}
+
+	.classList,.classList section{display:block;}
+	.classList section{width:90%;margin:20px auto;}
+	.classList section:before{content:"";display:block;background-color:rgba(0,0,0,.0);position:absolute;left:0;top:0;width:100%;height:800px;transition:all 0.5s;z-index:2;}
+	.classList section:hover:before{background-color:rgba(0,0,0,0.7);cursor:pointer;}
+	.classList section:after{content:"";display:block;position:absolute;left:0;top:0;background:url('images/link-blue2.png') no-repeat;width:50px;height:50px;top:-10%;left:50%;margin-left:-25px;
+							margin-top:-25px;transition:all 0.5s;z-index:1;}
+	.classList section:hover:after{top:50%; cursor:pointer;}
+	
+	section:last-child div{overflow:auto;} /*產生捲軸*/
+	section:last-child h1{text-align:center;font-size:24px;}
+	section:last-child table{width:500px;}
+	
+	iframe{float:none;width:80%}
+	form{margin-left:0px;}
+	
+	/*圖示課程排版1*/
+	/*#info ul li{width:100%;display:block;}*/
+
+	/*圖示課程排版2*/
+	#info ul{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;}
+
+	footer span{float:none;}
+	footer ul{margin-left:10px;}
+
+	
+}

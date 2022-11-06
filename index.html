@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"> <!--*fb和Twitter的符號-->
+	<link rel="stylesheet" href="lightbox.min.css">
+	<script src="lightbox-plus-jquery.min.js"></script>
+
+	<script>
+		
+		$(function(){
+
+			$('.top').hide()
+			$(window).scroll(function(){
+				if($(this).scrollTop()>1){
+					$('.top').fadeIn()
+				}else{
+					$('.top').fadeOut()
+				}
+			})
+			$('.top').click(function(){
+				$('html,body').animate({
+					scrollTop:0
+				},800);return false
+			})
+		})
+	</script>
+
+</head>
+<body>
+	
+
+	<div class="wrapper">
+		
+		<header>
+			
+			<div class="link">
+				
+				<ul>
+					<li>
+						<i class="fab fa-facebook "></i>
+						<a href="">粉絲團</a>
+					</li>
+					<li>
+						<i class="fab fa-twitter "></i>
+						<a href="">追隨我們</a>
+					</li>
+				</ul>
+
+			</div>
+			
+			<h1>巨匠電腦線上真人</h1>
+
+			<nav>
+				
+				<ul>
+					<li><a href="">首頁</a></li>
+					<li><a href="">產品資訊</a></li>
+					<li><a href="">連絡我們</a></li>
+					<li><a href="">線上地圖</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+
+		<div class="event">	
+			<h2>巨匠電腦 <br> 讓你奠定良好的前端基礎</h2>
+		</div>
+
+		<article>
+				
+				<div class="classList">
+
+					<section >
+
+						<img src="images/web_3.png" alt=""> 
+						<h1>HTML5基礎教學</h1>
+						<p class="p1">
+							主流前端網站設計的基礎就在巨匠電腦，在這裡不在是填鴨式教學，
+							而是透過實際範例，瞭解正確的網站開發流程，講師均具有業界開
+							發經驗，讓學員學習業界主流的開發方法。
+						</p>
+					</section>
+						
+
+					<section > 
+						
+						<img src="images/web_4.png" alt=""> 
+						<h1>響式網站設計</h1>
+						<p class="p1">
+							響應式網站設計(Responsive web design)，目前大多使用者均以
+							手機瀏覽情況下，響應式網站已經是必備。巨匠電腦將會提供業界響
+							應式開發的方法，讓學生瞭解行動版開發技巧。
+						</p>
+
+					</section>
+
+					<section> 
+						
+						<img src="images/web_5.png" alt=""> 
+						<h1>JQueryg實戰教學</h1>
+						<p>本課程有以下特色</p>
+						<ul>
+							<li>瞭解變數的使用方法</li>
+							<li>學習並操作DOM</li>
+							<li>學習基本數學運算方法</li>
+							<li>套件操作及運用</li>
+						</ul>
+					</section>
+
+				</div>
+				
+	
+				<section>
+						
+						<h1>線上及實體課程差異</h1>
+
+						<div>
+							
+							<table >
+							
+								<tr>
+									<td>項目</td>
+									<td>線上真人</td>
+									<td>一般線上課程</td>
+									<td>實體課程</td>
+								</tr>
+	
+								<tr>
+									<td>費用</td>
+									<td>較低</td>
+									<td>較低</td>
+									<td>較高</td>
+								</tr>
+
+								<tr>
+									<td>學習效果</td>
+									<td>一般</td>
+									<td>較低</td>
+									<td>很好</td>
+								</tr>
+
+								<tr>
+									<td>費用</td>
+									<td>較低</td>
+									<td>較低</td>
+									<td>較高</td>
+								</tr>
+
+								<tr>
+									<td>coding review</td>
+									<td>有</td>
+									<td>無</td>
+									<td>不一定</td>
+								</tr>
+									
+								<tr>
+									<td>課程更新速度</td>
+									<td>普通</td>
+									<td>普通</td>
+									<td>較慢</td>
+								</tr>
+									
+
+								<tr>
+									<td>多次複習</td>
+									<td>可</td>
+									<td>可</td>
+									<td>不可</td>
+								</tr>
+									
+								<tr>
+									<td>字幕</td>
+									<td>有</td>
+									<td>不一定</td>
+									<td>板書</td>
+								</tr>
+
+								</table>
+
+						</div>
+						
+
+				</section>
+			
+
+		</article>
+		
+		<aside>
+			
+			<h1 >對我們課程有興趣嗎?<br>歡迎留下你的資料</h1>
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.881395548129!2d120.63810481536792!3d24.175891978304456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469161f1d9bc8a1%3A0xe59cd27d373b2b5a!2z5beo5Yyg6Zu76IWmLemAoueUsuiqjeitiSB8IOWtuOmbu-iFpuiqsueoiyB8IOmbu-iFpuijnOe_kuePrQ!5e0!3m2!1szh-TW!2stw!4v1574217298415!5m2!1szh-TW!2stw"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			
+			<form action="">
+				
+				姓名:<br> <input type="text" name="name"><br>
+				電話:<br> <input type="text" name="telephone"><br>
+				信箱:<br> <input type="text" name="email"><br>
+				<br>
+				<textarea name="message" id="" cols="30" rows="10">這是留言區域</textarea>
+				<input type="button" value="送出" class="intbtn">
+
+			</form>
+
+		</aside>
+		
+		<!--lightbox功能，把包有img的a連結，新增一個data-lightbox的attribute來觸發燈箱效果。
+		一組圖片輪播 data-lightbox命名為相同的值-->	
+		<div id="info">
+			<h1>系列課程</h1>
+			<ul>
+				<li><a href="images/class01.png" data-lightbox="image-1" data-title="My caption"><img src="images/class01.png"></a></li>
+				<li><a href="images/class02.png" data-lightbox="image-1" data-title="My caption"><img src="images/class02.png"></a></li>
+				<li><a href="images/class03.png" data-lightbox="image-1" data-title="My caption"><img src="images/class03.png"></a></li>
+				<li><a href="images/class04.png" data-lightbox="image-1" data-title="My caption"><img src="images/class04.png"></a></li>
+			</ul>
+			<!--<input type="button"  style="background-image:url('images/up-icon.png');width:57px;height:57px;">-->
+			<div class="top"></div>
+		</div>
+			
+
+		<footer>
+
+			<span ></span>
+			<ul>
+				<li>聯絡我們:<em>serviice@pschool.com.tw</em></li>
+				<li>電話:<em>0800-222-818 </em></li>
+			</ul>
+				
+		</footer>
+
+
+
+	</div>
+
+</body>
+
+</html>
